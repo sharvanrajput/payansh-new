@@ -43,11 +43,11 @@ const Benefits = ({ theme }) => {
                                         clickable: true, // Make pagination dots clickable
                                     }}
                                     modules={[Pagination, Autoplay]} // Include the Pagination module
-                                    // autoplay={{
-                                    //     delay: 1000, // 3 seconds delay
-                                    //     disableOnInteraction: false, // Autoplay continues after user interaction
-                                    // }}
-                                    loop={false}
+                                    autoplay={{
+                                        delay: 1000, // 3 seconds delay
+                                        disableOnInteraction: true, // Autoplay continues after user interaction
+                                    }}
+                                    loop={true}
                                     breakpoints={{
                                         0: {
                                             slidesPerView: 1, // 1 slide for smaller screens

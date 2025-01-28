@@ -338,6 +338,10 @@ input:checked+.slider:before {
 .accordion-button:focus {
   box-shadow: none !important;
 }
+
+footer li{
+  font-size: 20px;
+}
 @media (max-width:1399px) and (min-width:1200px) {
   .banner_right h1 {
     font-size: 60px;
