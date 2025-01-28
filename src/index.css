@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+  --primary-color:#364981;
+  --secandry-color:#4295CE;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+section{
+  padding: 100px 0px;
+}
+nav {
+  padding: 20px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+.logo,
+nav ul li {
+  cursor: pointer;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  /* transform: rotate(180deg); */
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #0096e7;
+  /* Switched default to the previous checked color */
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+  /* Used the previous checked shadow */
+  background: #000000;
+  transition: 0.5s;
+}
+
+input:checked+.slider {
+  background-color: #171717;
+  /* Previously unchecked color */
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  /* Previously unchecked shadow */
+}
+
+
+.signupshake {
+  animation: shakesignup 2s infinite;
+  /* animation-delay: 2s; */
+}
+
+@keyframes shakesignup {
+
+  0%,
+  10%,
+  20% {
+    transform: translateX(-5px);
+  }
+
+  5%,
+  15% {
+    transform: translateX(5px);
+  }
+
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.banner {
+  padding: 200px 0px 200px;
+  background-image: linear-gradient(#f5f5f5 ,#f5f5f5)  ;
+  background-position: center;
+  
+  
+}
+.banner_img{
+  /* background-image: url(../public/images/bannerstring.png); */
+  background-size: cover;
+  background-position: center;
+
+}
+.banner_dark{
+  padding: 200px 0px 200px;
+  background-image: linear-gradient(45deg , var(--primary-color), var(--secandry-color));
+ 
+  
+  
+  color: white !important;
+}
+
+.text_graident {
+
+  background-image: linear-gradient(45deg, #4295CE, #364981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner_right h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+.banner_bottom_img{
+  transform: translateY(-50px);
+  width: 100%;
+}
+.theembutton {
+  background-image: linear-gradient(45deg, #4295CE, #364981);
+  color: white;
+
+}
+.btn-close span {
+  background-image: linear-gradient(45deg, #4295CE, #364981);
+  color: black ;
+  font-size: 30px;
+ 
+ 
+  /* display: block; */
+  text-align: center;
+}
+
+.service_box{
+ background-color: white;
+  border:2px solid  var(--secandry-color);
+  border-radius: 5px;
+  height: 100%;
+  padding: 15px 10px;
+}
+.service_box h3{
+ white-space: nowrap;
+}
+ h2{
+  font-size: 55px !important;
+  background-image: linear-gradient(45deg, #4295CE, #364981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+/* how its work */
+.steps_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.steps_box .number{
+  font-size: 150px;
+  font-weight: 800;
+  color: var(--secandry-color);
+  text-align: center;
+}
+/* .steps_box .number::after{
+  content: "";
+  height: 3px ;
+  border-radius: 50%;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 2px 4px #00000026, 0 3px 6px #0000001f;
+  transform: rotate(120deg);
+  margin-top: 100px;
+  margin-left: -100px;
+  z-index: 11;
+  position: absolute;
+} */
+.coverWrap{
+  
+  background-color: rgb(255, 255, 255);
+  height: 60px ;
+  width: 200px;
+  transform: rotate(120deg);
+  margin-top: -150px;
+  margin-left: 100px;
+}
+.steps_box  .content {  
+  margin-top: 80px;
+  margin-left: -80px;
+  z-index: 10;
+}
+.steps_box  .content h3 {  
+ font-size: 25px;
+}
+.steps_box  .content p {  
+ font-size: 16px;
+}
+.benefits_box{
+  padding: 20px 30px;
+  display: block;
+  border-radius: 5px;
+
+}
+.benefits_box img{
+  width: 350px;
+
+}
+.benefit_box{
+  padding:20px 30px
+}
+
+
+ .benefits .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  
+  width: 25px !important;
+  border-radius: 5px;
+  background-color: var(--primary-color) !important;
+ 
+  transition: all .2s;
+}
+.benefits {
+  position: relative;
+}
+.benefits .swiper-pagination {
+
+  bottom: -50px;
+ 
+
+ 
+}
+
+ .benefits .swiper-pagination-bullet {
+  background-color: var(--secandry-color)!important;
+  border-radius: 5px !important;
+  transition: all .2s;
+
+  width: 10px ;
+}
+.whychoose_box{
+  padding: 20px 30px;
+  display: block;
+  border-radius: 5px;
+}
+.review_item{
+  padding: 80px 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+@media (max-width:1399px) and (min-width:1200px) {
+  .banner_right h1 {
+    font-size: 60px;
+    font-weight: 600;
+  }
+}
+@media (max-width:1199px) and (min-width:992px)  {
+  .banner_right h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+@media (max-width:991.98px) and (min-width:768px) {
+  .banner_right h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+@media (max-width:767.98px) {
+  .banner_right h1 {
+    font-size: 29px;
+    font-weight: 600;
+  }
+  .banner {
+    padding: 150px 0px 100px;
+ 
+    
+  }
+  .banner_dark{
+    padding: 150px 0px 100px;
+ 
+  }
+}
