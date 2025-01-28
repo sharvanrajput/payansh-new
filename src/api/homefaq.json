@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "question": "Does it make sense to pay rent with the credit card?",
+        "answer": "Yes, why not. If you’re smartly able to use your credit card to timely pay off your rent, improve your credit history, manage better your credit cycle or use a card that gives you cashback with reward points, it probably makes the most sense to pay your rent using a credit card."
+    },
+    {
+        "id": 2,
+        "question": "How do I make payment using Payansh?",
+        "answer": "Payansh process is smooth and mild. Below are the key steps to use Payansh application:",
+        "steps": [
+            "Register in the portal with email id and password.",
+            "Select Make Payment button available on the Dashboard.",
+            "Fill in the bank details and remarks of your landlord. Click on submit.",
+            "Check the details, verify your identity and click on 'Confirm' to initiate your Fund Transfer.",
+            "Once you authorise the payment through credit card, the money will be initiated to your landlord."
+        ]
+    },
+    {
+        "id": 3,
+        "question": "How long does it take for email and mobile number verification?",
+        "answer": "Our CSR's work tirelessly to verify your account asap and you'll get notified for the same via email and sms. As soon as you register you'll be notified with the email and mobile number verification in just couple of minutes."
+    },
+    {
+        "id": 4,
+        "question": "How do I update my mobile number?",
+        "answer": "You can update your mobile number after login into your Payansh Account. We will send you an activation code in your new mobile number and on confirmation of the code your number will be changed instantly."
+    },
+    {
+        "id": 5,
+        "question": "Does Payansh charge any Convenience fee to the users?",
+        "answer": "Yes, Payansh levied the convenience fee of 2.5% for all the credit cards (Master card/Visa/Diners) with GST of 18% applicable on the above."
+    },
+    {
+        "id": 6,
+        "question": "How can I track my Rent payments and transactions?",
+        "answer": "You can track your Rent payments and transactions in our tab ‘History’."
+    },
+    {
+        "id": 7,
+        "question": "How long does it take for my landlord to receive my rent payment?",
+        "answer": "We try to initiate the payment in instant hours but maximum your rent will be credited in T+2 working days from the date of transaction to get reflected in your landlord's account."
+    },
+    {
+        "id": 8,
+        "question": "Will you send me a soft copy of the rental receipt?",
+        "answer": "Yes, the rental receipts auto-generated on your payansh dashboard. Also, we will send you a soft copy on the mentioned email address."
+    },
+    {
+        "id": 9,
+        "question": "How to refer my friends and family?",
+        "answer": "Referring friends and family is easy and effortless. Invite your friends or family members to Payansh and earn upto Rs.30,000 per year with your unique referral code when you make transaction."
+    },
+    {
+        "id": 10,
+        "question": "Do I get reward points for paying with my rent through Payansh?",
+        "answer": "Yes, Payansh allows you to earn credit card points and further, you can avail these rewards in cash."
+    },
+    {
+        "id": 11,
+        "question": "Is landlord’s PAN number necessary in processing the rentals?",
+        "answer": "It's not mandatory to indicate the PAN details of the landlord for the payment below Rs. 1,00,000 per annum or Rs. 8,333 per month. But yes, if the payment exceeds then the Income Tax rules mandates the tenant to submit the PAN details of the landlord."
+    },
+    {
+        "id": 12,
+        "question": "If my landlord doesn't use Payansh, Can I still process the payment with this app?",
+        "answer": "Absolutely. Payansh doesn't require your landlord to signup on our platform, you have the option to notify your landlord by sharing his email ID and Mobile number."
+    }
+]
