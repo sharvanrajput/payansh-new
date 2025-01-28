@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+
 import thumbs from '../../public/images/thumbs.webp';
 import quote_icon from '../../public/images/quote-icon.png';
 

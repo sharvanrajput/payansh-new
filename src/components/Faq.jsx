@@ -2,22 +2,22 @@
 import React from 'react'
 
 import homefaq from "../api/homefaq.json"
-const Faq = () => {
+const Faq = ({theme}) => {
     return (
         <>
-            <section className="faq_wraper pt-0">
+            <section className={` ${theme ? "text-white bg-black" : "text-black bg-white "}  faq_wraper `}>
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="banner_left text-white text-lg-start text-center home-about-right ">
-                                <h2 className="fs-1 fs-1 heading-graident">Frequently Asked Questions</h2>
+                            <div className="banner_left  ">
+                                <h2 className="">Frequently Asked Questions</h2>
                                 <p>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dignissimos tenetur at illum aspernatur consequuntur.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className={ `  ${theme ? "text-black" : "text-white "} row`}>
                         <div className="col">
                             <div className="accordion " id="accordionExample">
                                 {homefaq?.map((ele, ind) => {
@@ -25,7 +25,7 @@ const Faq = () => {
                                         <div className="accordion-item mt-3" key={ind}>
                                             <h3 className="accordion-header" id={`heading${ind}`}>
                                                 <button
-                                                    className="accordion-button collapsed"
+                                                    className={` ${theme ? "text-white" : "text-black "} accordion-button collapsed`}
                                                     type="button"
                                                     data-bs-toggle="collapse"
                                                     data-bs-target={`#collapse${ind}`}
@@ -37,7 +37,7 @@ const Faq = () => {
                                             </h3>
                                             <div
                                                 id={`collapse${ind}`}
-                                                className="accordion-collapse collapse"
+                                                className={` ${theme ? "text-white" : "text-black "} accordion-collapse collapse`}
                                                 aria-labelledby={`heading${ind}`}
                                                 data-bs-parent="#accordionExample"
                                             >

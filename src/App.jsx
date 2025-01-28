@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
-import { Banner, Benefits, Downloadapp, Homeabout, Howitworks, Review, Whychooseus } from './components';
+import { Banner, Benefits, Downloadapp, Faq, Homeabout, Howitworks, Review, Whychooseus } from './components';
 
 
 const App = () => {
@@ -21,6 +21,7 @@ const App = () => {
     <Whychooseus theme={theme} />
     <Downloadapp theme={theme} />
     <Review theme={theme} />
+    <Faq theme={theme} />
     
     </>
   )
