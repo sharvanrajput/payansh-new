@@ -8,8 +8,6 @@ const Blog = ({theme, toggleTheme}) => {
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <Allsectionbanner theme={theme} bannertitle={" BLOG"}  />
         
-
-
         <Blogs theme={theme} />
         <Footer theme={theme} />
 

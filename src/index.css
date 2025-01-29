@@ -396,6 +396,12 @@ place-items: center ;
 .blogs_container aside {
   z-index: -10;
 }
+.blogdetails_thumb{
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
 @media (max-width:1399px) and (min-width:1200px) {
   .banner_right h1 {
     font-size: 60px;
@@ -416,12 +422,23 @@ place-items: center ;
     line-height: 50px;
     font-weight: 600;
   }
+  .blogdetails_thumb{
+    height: 300px;
+    width: 100%;
+   
+  }
 }
 @media (max-width:767.98px) {
   .banner_right h1 {
     font-size: 29px;
     line-height: 39px;
     font-weight: 600;
+  }
+  .blogdetails_thumb{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+   
   }
   .banner {
     padding: 150px 0px 100px;

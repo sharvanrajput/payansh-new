@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { About, Contact, Home, Solutions } from './pages';
 import Blog from './pages/blog';
 import Faq1 from './pages/Faq1';
-import { CustomCursor } from './components';
-
-
+import { BlogDetails, CustomCursor } from './components';
 
 const App = () => {
   const [theme, setTheme] = useState(false); // false for light, true for dark
@@ -17,7 +15,6 @@ const App = () => {
 
   return (
     <>
-
       <CustomCursor />
       <Router>
         <Routes>
@@ -25,25 +22,13 @@ const App = () => {
           <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme} />} />
           <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme} />} />
           <Route path="/blog" element={<Blog theme={theme} toggleTheme={toggleTheme} />} />
+          <Route path="/blogs/:id" element={<BlogDetails theme={theme} toggleTheme={toggleTheme} />} /> {/* ✅ Fix: Pass theme */}
           <Route path="/faq" element={<Faq1 theme={theme} toggleTheme={toggleTheme} />} />
           <Route path="/solutions" element={<Solutions theme={theme} toggleTheme={toggleTheme} />} />
         </Routes>
       </Router>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
