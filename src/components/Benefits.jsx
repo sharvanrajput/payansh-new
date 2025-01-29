@@ -24,7 +24,7 @@ const Benefits = ({ theme }) => {
                         {/* Left Section */}
                         <div className="col-lg-4">
                             <div className="banner_left text-lg-start  home-about-right">
-                                <h2 className="fs-1 fs-1 heading-graident">Know Your Benefits</h2>
+                                <h2 className=" heading-graident">Know Your Benefits</h2>
                                 <p className={` ${theme ? "text-white" : "text-black  "} fs-5`}>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dignissimos tenetur at illum aspernatur consequuntur.
                                 </p>

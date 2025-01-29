@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-import { Banner, Benefits, Downloadapp, Faq, Footer, Homeabout, Howitworks, Navbar, Review, Whychooseus } from '../components'
+import { Banner, Benefits, Downloadapp,  Footer, Homeabout, Howitworks, Navbar, Review, Whychooseus } from '../components'
 
 const Home = ({theme, toggleTheme}) => {
    
@@ -13,9 +13,9 @@ const Home = ({theme, toggleTheme}) => {
             <Howitworks theme={theme} />
             <Benefits theme={theme} />
             <Whychooseus theme={theme} />
-            <Downloadapp theme={theme} />
             <Review theme={theme} />
-            <Faq theme={theme} />
+            <Downloadapp theme={theme} />
+            {/* <Faq theme={theme} /> */}
             <Footer theme={theme} />
 
         </>

@@ -135,9 +135,6 @@ input:checked+.slider:before {
 .banner_dark{
   padding: 200px 0px 200px;
   background-image: linear-gradient(45deg , var(--primary-color), var(--secandry-color));
- 
-  
-  
   color: white !important;
 }
 
@@ -150,6 +147,7 @@ input:checked+.slider:before {
 
  h1 {
   font-size: 70px;
+  line-height: 75px;
   font-weight: 600;
 }
 .banner_bottom_img{
@@ -354,29 +352,48 @@ footer li{
   background-size: contain;
 }
 
+.misionvision .card{
+  border: none;
+}
+
+.custom-cursor {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  background: transparent;
+}
 
 
 @media (max-width:1399px) and (min-width:1200px) {
   .banner_right h1 {
     font-size: 60px;
+    line-height: 70px;
     font-weight: 600;
   }
 }
 @media (max-width:1199px) and (min-width:992px)  {
   .banner_right h1 {
     font-size: 40px;
+    line-height: 50px;
     font-weight: 600;
   }
 }
 @media (max-width:991.98px) and (min-width:768px) {
   .banner_right h1 {
     font-size: 50px;
+    line-height: 50px;
     font-weight: 600;
   }
 }
 @media (max-width:767.98px) {
   .banner_right h1 {
     font-size: 29px;
+    line-height: 39px;
     font-weight: 600;
   }
   .banner {

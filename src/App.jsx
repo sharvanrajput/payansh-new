@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About, Contact, Home, Solutions } from './pages';
 import Blog from './pages/blog';
 import Faq1 from './pages/Faq1';
+import { CustomCursor } from './components';
+
 
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
   return (
     <>
 
+        <CustomCursor />
       <Router>
         <Routes>
           <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />

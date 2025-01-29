@@ -19,7 +19,7 @@ const Review = ({ theme }) => {
     return (
         <>
 
-            <section className={`${theme ? "bg-dark text-white" : "bg-light text-dark"} review`}>
+            <section className={`${theme ? "bg-black text-white" : "bg-light text-black"} review`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5">
