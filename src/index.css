@@ -290,7 +290,7 @@ input:checked+.slider:before {
 }
 .review .slick-next:before ,
 .review  .slick-prev:before {
- 
+ display: none;
   color: var(--secandry-color) !important;
   font-size: 25px !important;
 
@@ -298,11 +298,15 @@ input:checked+.slider:before {
 .review .slick-next:after{
   left: 0%;
 }
-
-
+.slick-dots li.slick-active button:before 
 .accordion-collapse {
-  background-color: transparent !important;
+  background-color: var(--secandry-color) !important;
 }
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: var(--primary-color) !important; 
+}
+
 
 .accordion-item {
   background: transparent;

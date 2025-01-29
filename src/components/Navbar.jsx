@@ -2,6 +2,7 @@ import React from 'react';
 import { SlLogin } from "react-icons/sl";
 import lightlogo from '../../public/images/logo.png';
 import darklogo from '../../public/images/darklogo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ theme, toggleTheme }) => {
     return (
@@ -15,11 +16,30 @@ const Navbar = ({ theme, toggleTheme }) => {
 
                     <div className="pages d-lg-block d-none">
                         <ul className="list-inline d-flex gap-4">
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Home</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>About</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Solutions</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Blog</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Contact</li>
+                            <Link to="/" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Home</li>
+                            </Link>
+                            <Link to="/about" className='text-decoration-none'>
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>About</li>
+
+                            </Link>
+                            <Link to="/solutions" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Solutions</li>
+                            </Link>
+                            <Link to="/faq" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Faq</li>
+                            </Link>
+                            <Link to="/blog" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Blog</li>
+                            </Link>
+                            <Link to="/contact" className='text-decoration-none'>
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Contact</li>
+
+                            </Link>
                         </ul>
                     </div>
 
@@ -59,7 +79,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                     <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel"><div className="logo">
                         <img src={`${theme ? lightlogo : darklogo} `} width={150} alt="Logo" />
                     </div></h5>
-                   
+
                     <button type="button" className="btn-close d-flex justify-content-center align-items-center p-3" data-bs-dismiss="offcanvas" aria-label="Close"><span className='px-3 py-1 rounded-3'> <i className="bi bi-x-square"></i></span></button>
                 </div>
                 <div className={` bg-${theme ? "black" : "white"} fw-medium offcanvas-body`}>
