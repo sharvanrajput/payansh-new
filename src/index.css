@@ -367,8 +367,35 @@ footer li{
   mix-blend-mode: difference;
   background: transparent;
 }
+.blog_item .blog_thumb {
+  position: relative;
+}
+.blog_item .hovericon{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+display: grid;
+color:#fff;
+place-items: center ;
+  background-image: linear-gradient(45deg, #4296ce7d, #36498185);
+  font-size: 50px;
+  left: 0;
+  visibility: hidden;
+  top: 0;
+  
+}
+.blog_item:hover .hovericon {
+  visibility: visible;
+}
+.blog_item button:hover{
+  color: white;
 
 
+}
+.blogs_container aside {
+  z-index: -10;
+}
 @media (max-width:1399px) and (min-width:1200px) {
   .banner_right h1 {
     font-size: 60px;

@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "image": "../../public/images/blog1.jpg",
+      "date": "2025-01-29",
+      "heading": "The Future of AI in Web Development",
+      "paragraph": "Artificial intelligence is transforming the way we build and interact with websites. From automated design to AI-powered chatbots, the future looks promising."
+    },
+    {
+      "id": 2,
+      "image": "../../public/images/blog2.jpg",
+      "date": "2025-01-25",
+      "heading": "Top 10 React Libraries to Use in 2025",
+      "paragraph": "React continues to evolve, and new libraries are making development even smoother. Check out the top 10 must-have React libraries for 2025."
+    },
+    {
+      "id": 3,
+      "image": "../../public/images/blog3.jpg",
+      "date": "2025-01-20",
+      "heading": "Why Tailwind CSS is Taking Over the Industry",
+      "paragraph": "Tailwind CSS is rapidly becoming the go-to framework for modern web development. Let's explore why developers love it."
+    }
+]

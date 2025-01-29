@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
 
-        <CustomCursor />
+      <CustomCursor />
       <Router>
         <Routes>
           <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
