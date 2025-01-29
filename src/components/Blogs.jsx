@@ -26,8 +26,8 @@ const Blogs = ({ theme }) => {
                                         <span>{blog.date}</span>
                                     </div>
                                     <div className="blog_content">
-                                        <h3>{blog.heading}</h3>
-                                        <p>{blog.paragraph}</p>
+                                        <h3 className='line-clamp3'>{blog.heading}</h3>
+                                        <p className='line-clamp2 '>{blog.paragraph}</p>
                                         
                                         {/* ✅ Fix: Correct navigation */}
                                         <Link to={`/blogs/${blog.id}`}>

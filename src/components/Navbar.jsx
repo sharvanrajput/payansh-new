@@ -85,11 +85,30 @@ const Navbar = ({ theme, toggleTheme }) => {
                 <div className={` bg-${theme ? "black" : "white"} fw-medium offcanvas-body`}>
                     <div className="pages">
                         <ul className="list-inline d-flex flex-column gap-4">
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Home</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>About</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Solutions</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Blog</li>
-                            <li className={`text-${theme ? "white" : "black"} fw-medium`}>Contact</li>
+                            <Link to="/" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Home</li>
+                            </Link>
+                            <Link to="/about" className='text-decoration-none'>
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>About</li>
+
+                            </Link>
+                            <Link to="/solutions" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Solutions</li>
+                            </Link>
+                            <Link to="/faq" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Faq</li>
+                            </Link>
+                            <Link to="/blog" className='text-decoration-none'>
+
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Blog</li>
+                            </Link>
+                            <Link to="/contact" className='text-decoration-none'>
+                                <li className={`text-${theme ? "white" : "black"} fw-medium`}>Contact</li>
+
+                            </Link>
                         </ul>
                     </div>
                     <div className="loginbox  align-items-center gap-4 ">

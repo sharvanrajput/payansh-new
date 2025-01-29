@@ -8,12 +8,12 @@ import lightlogo from '../../public/images/logo.png'
 const Footer = ({theme}) => {
     return (
         <>
-            <footer className={`${theme ? " banner_dark" : "bg-black text-white"} py-5`}>
+            <footer className={`${theme ? " bg-black text-white" : "bg-light text-black"} py-5`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-md-3">
                             <div className="footer_Baout">
-                                <img src={`${ theme ? footerlogo :  lightlogo} `} width={140} className=' pb-3' alt="" />
+                                <img src={`${ theme ? lightlogo  : footerlogo } `} width={140} className=' pb-3' alt="" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien id lectus mattis consectetur.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien id lectus mattis consectetur.</p>
                             </div>

@@ -17,18 +17,18 @@ const BlogDetails = ({ theme, toggleTheme }) => {
     <>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
 
-      <section className="blogdetails">
+      <section className={` ${theme ? "bg-black text-white" : "bg-white text-black"}  blogdetails`}>
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className='blogdetails_thumb'>
 
-              <img src={blog.image} className='img-fluid '  alt={blog.heading} />
+                <img src={blog.image} className='img-fluid ' alt={blog.heading} />
               </div>
               <div className="blog_meta py-3 d-flex align-items-center justify-content-between">
-                                        <span>By Admin</span>
-                                        <span>{blog.date}</span>
-                                    </div>
+                <span>By Admin</span>
+                <span>{blog.date}</span>
+              </div>
               <h2>{blog.heading}</h2>
               <p>{blog.paragraph}</p>
             </div>
