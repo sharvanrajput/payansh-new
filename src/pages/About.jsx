@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Footer, Navbar } from '../components';
+import { Allsectionbanner, Footer, Navbar } from '../components';
 
 const About = ({theme, toggleTheme}) => {
   
@@ -7,7 +7,8 @@ const About = ({theme, toggleTheme}) => {
     return (
         <>
             <Navbar theme={theme} toggleTheme={toggleTheme} />
-            <h1>About Page</h1>
+          
+            <Allsectionbanner theme={theme} bannertitle={"ABOUT US"}  />
             <Footer theme={theme} />
 
         </>

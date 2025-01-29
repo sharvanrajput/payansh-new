@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import { Faq, Footer, Navbar } from '../components'
+import { Allsectionbanner, Faq, Footer, Navbar } from '../components'
 
 const Faq1 = ({theme, toggleTheme}) => {
  
     return (
         <>
             <Navbar theme={theme} toggleTheme={toggleTheme} />
+            <Allsectionbanner theme={theme} bannertitle={"FAQ'S"}  />
+
             <Faq />
             <Footer theme={theme} />
 

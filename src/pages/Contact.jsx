@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-import { Footer, Navbar } from '../components';
+import { Allsectionbanner, Footer, Navbar } from '../components';
 
 const Contact = ({theme, toggleTheme}) => {
    
   return (
     <>
         <Navbar theme={theme} toggleTheme={toggleTheme} />
-        <h1>Contact Us</h1>
+        <Allsectionbanner theme={theme} bannertitle={"CONTACT US"}  />
+
         <Footer theme={theme} />
 
     </>
