@@ -48,10 +48,14 @@ const Navbar = ({ theme, toggleTheme }) => {
 
                             <div className="loginsignup">
                                 <ul className="list-inline d-flex align-items-center gap-3">
-                                    <li className={`text-${theme ? "white" : "black"} fw-medium`}>
-                                        <span><SlLogin /></span> Login
-                                    </li>
-                                    <li className={` theembutton btn fw-medium signupshake`}>Sign Up</li>
+                                    <Link to="/auto" className='text-decoration-none'>
+                                        <li className={`text-${theme ? "white" : "black"} fw-medium`}>
+                                            <span><SlLogin /></span> Login
+                                        </li>
+                                    </Link>
+                                    <Link to="/auth">
+                                        <li className={` text-white theembutton btn fw-medium signupshake`}>  Sign Up</li>
+                                    </Link>
                                 </ul>
                             </div>
 
