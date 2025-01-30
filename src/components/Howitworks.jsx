@@ -1,10 +1,17 @@
 import React from 'react'
 
-const Howitworks = ({theme}) => {
+const Howitworks = ({ theme }) => {
 
     return (
         <>
-            <section className={`   ${theme ? "bg-dark" : "bg-light"} ${theme ? "text-white" : "text-black"} Howitwork bg-light`}>
+           
+            <section className={`   ${theme ? "bg-dark" : "bg-light"} ${theme ? "text-white" : "text-black"} Howitwork bg-light py-0`}>
+            <div className="banner_top_shave " style={{transform:"rotate(180deg)"}}>
+
+<svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+</svg>
+</div>
                 <div className="container">
                     <div className="row">
                         <div className="col text-center">
@@ -16,7 +23,7 @@ const Howitworks = ({theme}) => {
                     <div className="infoGraphic row justify-content-center">
                         <div className="col-lg-4 col-md-6">
                             <div className="steps_box">
-                                
+
 
                                 <div className="numberWrap">
                                     <div className="number fontColor1">1</div>
@@ -98,7 +105,12 @@ const Howitworks = ({theme}) => {
 
                     </div>
                 </div>
+                <div className="banner_top_shave " >
 
+<svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+</svg>
+</div>
             </section>
         </>
     )

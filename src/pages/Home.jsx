@@ -13,8 +13,8 @@ const Home = ({theme, toggleTheme}) => {
             <Howitworks theme={theme} />
             <Benefits theme={theme} />
             <Whychooseus theme={theme} />
-            <Review theme={theme} />
             <Downloadapp theme={theme} />
+            <Review theme={theme} />
             {/* <Faq theme={theme} /> */}
             <Footer theme={theme} />
 

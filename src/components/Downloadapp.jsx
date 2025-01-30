@@ -5,7 +5,8 @@ import downloadapp from '../../public/images/downloadapp.png'
 const Downloadapp = ({theme}) => {
     return (
         <>
-            <section className={` ${theme ? "bg-black text-white  " : "bg-white text-black"}  dowdnload pw-0`}>
+            <section className={` ${theme ? "bg-black text-white  " : "bg-white text-black"}  dowdnload pb-5`}>
+                
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 align-self-center">
@@ -27,6 +28,7 @@ const Downloadapp = ({theme}) => {
                     </div>
 
                 </div>
+              
             </section>
 
         </>

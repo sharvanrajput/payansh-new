@@ -19,10 +19,16 @@ const Review = ({ theme }) => {
     return (
         <>
 
-            <section className={`${theme ? "bg-black text-white" : "bg-light text-black"} review`}>
-                <div className="container">
+            <section className={`${theme ? "bg-dark text-white" : "bg-light text-black"} review py-0 `}>
+                <div className="banner_top_shave " style={{ transform: "rotate(180deg)" }}>
+
+                    <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+                    </svg>
+                </div>
+                <div className="container py-5">
                     <div className="row">
-                        <div className="col-lg-5">
+                        <div className="col-lg-5 align-self-center">
                             <div className="review_left">
                                 <div className="icon iconReview">
                                     <img src={thumbs} width={100} alt="" />
@@ -108,6 +114,12 @@ const Review = ({ theme }) => {
                             </Slider>
                         </div>
                     </div>
+                </div>
+                <div className="banner_top_shave " >
+
+                    <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+                    </svg>
                 </div>
             </section>
         </>

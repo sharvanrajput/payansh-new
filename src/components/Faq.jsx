@@ -2,10 +2,11 @@
 import React from 'react'
 
 import homefaq from "../api/homefaq.json"
-const Faq = ({theme}) => {
+const Faq = ({ theme }) => {
     return (
         <>
-            <section className={` ${theme ? "text-white bg-black" : "text-black bg-white "}  faq_wraper `}>
+            <section className={` ${theme ? "text-white bg-dark" : "text-black bg-light "}  faq_wraper pb-0 `}>
+               
                 <div className="container">
                     <div className="row">
                         <div className="col">
@@ -17,7 +18,7 @@ const Faq = ({theme}) => {
                             </div>
                         </div>
                     </div>
-                    <div className={ `  ${theme ? "text-black" : "text-white "} row`}>
+                    <div className={`  ${theme ? "text-black" : "text-white "} row`}>
                         <div className="col">
                             <div className="accordion " id="accordionExample">
                                 {homefaq?.map((ele, ind) => {
@@ -50,6 +51,12 @@ const Faq = ({theme}) => {
                         </div>
                     </div>
                 </div>
+                <div className="banner_top_shave " >
+
+<svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+</svg>
+</div>
             </section>
         </>
     )

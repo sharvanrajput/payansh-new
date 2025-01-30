@@ -7,7 +7,7 @@ import vision from '../../public/images/vision.jpg'
 const MissionVision = ({theme}) => {
     return (
         <>
-            <section className={` ${theme ? "bg-dark" : "bg-light"}  misionvision`}>
+            <section className={` ${theme ? "bg-black" : "bg-white"}  misionvision`}>
                 <div className="container">
                     <div className="row gy-5">
                         <div className="col-lg-4 col-md-6">
