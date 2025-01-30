@@ -24,6 +24,7 @@ const App = () => {
           <Route path="/blog" element={<Blog theme={theme} toggleTheme={toggleTheme} />} />
           <Route path="/blogs/:id" element={<BlogDetails theme={theme} toggleTheme={toggleTheme} />} /> {/* ✅ Fix: Pass theme */}
           <Route path="/faq" element={<Faq1 theme={theme} toggleTheme={toggleTheme} />} />
+          <Route path="/auth" element={<Signuplogin theme={theme} toggleTheme={toggleTheme} />} />
           <Route path="/solutions" element={<Solutions theme={theme} toggleTheme={toggleTheme} />} />
         </Routes>
       </Router>
