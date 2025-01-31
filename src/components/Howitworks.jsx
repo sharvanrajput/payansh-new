@@ -4,15 +4,15 @@ const Howitworks = ({ theme }) => {
 
     return (
         <>
-           
-            <section className={`   ${theme ? "bg-dark" : "bg-light"} ${theme ? "text-white" : "text-black"} Howitwork bg-light py-0`}>
-            <div className="banner_top_shave " style={{transform:"rotate(180deg)"}}>
 
-<svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
-</svg>
-</div>
-                <div className="container">
+            <section className={`   ${theme ? "bg-dark" : "bg-light"} ${theme ? "text-white" : "text-black"} Howitwork bg-light py-0`}>
+                <div className="banner_top_shave " style={{ transform: "rotate(180deg)" }}>
+
+                    <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+                    </svg>
+                </div>
+                <div className="container pb-5">
                     <div className="row">
                         <div className="col text-center">
                             <h2 className={``} >How it works</h2>
@@ -107,10 +107,10 @@ const Howitworks = ({ theme }) => {
                 </div>
                 <div className="banner_top_shave " >
 
-<svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
-</svg>
-</div>
+                    <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+                    </svg>
+                </div>
             </section>
         </>
     )

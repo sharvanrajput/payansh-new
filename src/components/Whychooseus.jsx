@@ -23,7 +23,7 @@ const Whychooseus = ({ theme }) => {
 
                         <div className="row g-4 mx-0">
                             <div className="col-lg-6">
-                                <div className={`whychoose_box  ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex`}>
+                                <div className={`whychoose_box  ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex flex-md-row flex-column`}>
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>
@@ -35,7 +35,7 @@ const Whychooseus = ({ theme }) => {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className={`whychoose_box  ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex`}>
+                                <div className={`whychoose_box  ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex flex-md-row flex-column`}>
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>
@@ -47,7 +47,7 @@ const Whychooseus = ({ theme }) => {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className={`whychoose_box  ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex`}>
+                                <div className={`whychoose_box  ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex flex-md-row flex-column`}>
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>
@@ -59,7 +59,7 @@ const Whychooseus = ({ theme }) => {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className={`whychoose_box ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex`}>
+                                <div className={`whychoose_box ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex flex-md-row flex-column`}>
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>

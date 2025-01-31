@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About, Contact, Home, Solutions } from './pages';
 import Blog from './pages/blog';
 import Faq1 from './pages/Faq1';
-import { BlogDetails, CustomCursor, Signuplogin } from './components';
+import { BlogDetails,  Signuplogin } from './components';
 
 const App = () => {
   const [theme, setTheme] = useState(false); // false for light, true for dark
@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Router>
         <Routes>
           <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />

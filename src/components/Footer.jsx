@@ -49,7 +49,7 @@ const Footer = ({theme}) => {
                         </div>
                     </div>
                     
-                    <div className="row">
+                    <div className="row mt-4">
                         <div className="col text-center py-3 border-top">
                             <p className="copy mb-0">&copy; 2022 Payansh. All rights reserved.</p>
                         </div>

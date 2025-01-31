@@ -14,7 +14,15 @@ const Review = ({ theme }) => {
         autoplay: true,
         speed: 200,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 768, // Disable arrows on screens <= 768px
+              settings: {
+                arrows: false
+              }
+            }
+          ]
     };
     return (
         <>

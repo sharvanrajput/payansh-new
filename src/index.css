@@ -437,6 +437,7 @@ footer li {
 
 }
 
+
 .blogdetails_thumb {
   height: 500px;
   width: 100%;
@@ -509,7 +510,7 @@ footer li {
   margin-left: 62px;
 }
 
-.solution_box{
+.solution_box {
   padding: 30px;
   border-radius: 5px;
 }
@@ -588,7 +589,6 @@ footer li {
   .blogdetails_thumb {
     height: 200px;
     width: 100%;
-
   }
 
   .review .review_item {
@@ -618,8 +618,10 @@ footer li {
   }
 
   .coverWrap {
-
     margin-top: -150px;
     margin-left: 62px;
+  }
+  .slick-arrow {
+    display: none !important; 
   }
 }
