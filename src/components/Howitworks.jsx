@@ -5,7 +5,7 @@ const Howitworks = ({ theme }) => {
     return (
         <>
 
-            <section className={`   ${theme ? "bg-dark" : "bg-light"} ${theme ? "text-white" : "text-black"} Howitwork bg-light py-0`}>
+            <section className={`   ${theme ? "bg-dark" : "bg-light"} ${theme ? "text-light" : "text-black"} Howitwork bg-light py-0`}>
                 <div className="banner_top_shave " style={{ transform: "rotate(180deg)" }}>
 
                     <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -16,7 +16,7 @@ const Howitworks = ({ theme }) => {
                     <div className="row">
                         <div className="col text-center">
                             <h2 className={``} >How it works</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas?</p>
+                            <p className={`${theme ? "text-light" : "text-secondary"}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas?</p>
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@ const Howitworks = ({ theme }) => {
                                 <div className="content">
                                     <div className="icon iconCodepen"></div>
                                     <h3>Develop</h3>
-                                    <p>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const Howitworks = ({ theme }) => {
                                 <div className="content">
                                     <div className="icon iconSocial"></div>
                                     <h3>Engage</h3>
-                                    <p>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}> Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const Howitworks = ({ theme }) => {
                                 <div className="content">
                                     <div className="icon iconAirplane"></div>
                                     <h3>Deliver</h3>
-                                    <p>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const Howitworks = ({ theme }) => {
                                 <div className="content">
                                     <div className="icon iconMap"></div>
                                     <h3>Plan</h3>
-                                    <p>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const Howitworks = ({ theme }) => {
                                 <div className="content">
                                     <div className="icon iconBulb"></div>
                                     <h3>Educate</h3>
-                                    <p>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,70 +1,84 @@
 import React, { useState } from "react";
 
 const Signuplogin = () => {
-  const [isSignup, setIsSignup] = useState(false);
+
+  const [isSignUp, setIsSignUp] = useState(false);
+
+  const [signname , setSignname] =  useState("");
+  const [signmail , setSignmail] =  useState("");
+  const [signpass , setSignpass] =  useState("");
+  const [logpass , setLogpass] =  useState("");
+  const [logmail , setLognmail] =  useState("");
+
+  const handleSignname = (e)=> {
+    setSignname(e.target.value);
+  }
+  const handleSignemail = (e)=> {
+    setSignmail(e.target.value);
+  }
+  const handleSignPassword = (e)=> {
+    setSignpass(e.target.value);
+  }
+  const handleLogmail = (e)=> {
+    setLognmail(e.target.value);
+  }
+  const handleLogpass = (e)=> {
+    setLogpass(e.target.value);
+  }
 
   return (
-    <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
-      <div className="card p-4 shadow-lg" style={{ width: "350px" }}>
-        <h2 className="text-center">{isSignup ? "Sign Up" : "Login"}</h2>
-        
-        <form>
-          {isSignup && (
-            <div className="mb-3">
-              <label className="form-label">Full Name</label>
-              <input type="text" className="form-control" placeholder="Enter your name" required />
-            </div>
-          )}
+    <>
+      <section className="loginsignup">
 
-          <div className="mb-3">
-            <label className="form-label">Email</label>
-            <input type="email" className="form-control" placeholder="Enter email" required />
+
+
+      <div className="form_toggle_button_phone d-flex justify-content-center d-md-none d-block">
+            <button className="btn btn-success" onClick={() => setIsSignUp(false)}>Sign In</button>
+            <button className="btn btn-success ms-3" onClick={() => setIsSignUp(true)}>Sign Up</button>
           </div>
+        <div className={`container ${isSignUp ? "right-panel-active" : ""}`}>
+         
+          <div className="form-container sign-up-container d-md-block ">
+            <form>
+              <h1>Sign Up</h1>
 
-          <div className="mb-3">
-            <label className="form-label">Password</label>
-            <input type="password" className="form-control" placeholder="Enter password" required />
+              <span>or use your email for registration</span>
+              <input onChange={(e)=>{ handleSignname(e)}} value={signname} type="text" placeholder="Name" />
+              <input onChange={(e)=>{handleSignemail(e)}} value={signmail} type="email" placeholder="Email" />
+              <input onChange={(e)=>{handleSignPassword(e)}} value={signpass} type="password" placeholder="Password" />
+              <button className="mt-3">Sign Up</button>
+            </form>
           </div>
+          <div className="form-container sign-in-container d-md-block  ">
+            <form>
+              <h1>Sign In</h1>
 
-          {isSignup && (
-            <div className="mb-3">
-              <label className="form-label">Confirm Password</label>
-              <input type="password" className="form-control" placeholder="Confirm password" required />
+              <span>or use your email account</span>
+              <input onChange={(e) => handleLogmail(e)} value={logmail} type="email" placeholder="Email" />
+              <input onChange={(e) => handleLogpass(e)} value={logpass} type="password" placeholder="Password" />
+              <a href="#">Forgot your password?</a>
+              <button>Sign In</button>
+            </form>
+          </div>
+          <div className="overlay-container d-md-block d-none">
+            <div className="overlay">
+              <div className="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To stay connected with us please login with your personal info</p>
+                <button className="ghost" onClick={() => setIsSignUp(false)}>Sign In</button>
+              </div>
+              <div className="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start your journey with us</p>
+                <button className="ghost" onClick={() => setIsSignUp(true)}>Sign Up</button>
+              </div>
             </div>
-          )}
-
-          <button type="submit" className="btn btn-primary w-100">
-            {isSignup ? "Sign Up" : "Login"}
-          </button>
-        </form>
-
-        <div className="text-center mt-3">
-          {isSignup ? (
-            <p>
-              Already have an account?{" "}
-              <span
-                className="text-primary cursor-pointer"
-                style={{ cursor: "pointer" }}
-                onClick={() => setIsSignup(false)}
-              >
-                Login
-              </span>
-            </p>
-          ) : (
-            <p>
-              Don't have an account?{" "}
-              <span
-                className="text-primary cursor-pointer"
-                style={{ cursor: "pointer" }}
-                onClick={() => setIsSignup(true)}
-              >
-                Sign Up
-              </span>
-            </p>
-          )}
+          </div>
         </div>
-      </div>
-    </div>
+
+
+      </section>
+    </>
   );
 };
 

@@ -27,7 +27,7 @@ const Review = ({ theme }) => {
     return (
         <>
 
-            <section className={`${theme ? "bg-dark text-white" : "bg-light text-black"} review py-0 `}>
+            <section className={`${theme ? "bg-dark " : "bg-light "} review py-0 `}>
                 <div className="banner_top_shave " style={{ transform: "rotate(180deg)" }}>
 
                     <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -42,8 +42,8 @@ const Review = ({ theme }) => {
                                     <img src={thumbs} width={100} alt="" />
                                     <span className='fw-semibold'>Clint's Feedback</span>
                                 </div>
-                                <h2>What Our Happy Clients Say</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas? Lorem ipsum dolor sit </p>
+                                <h2 className={`${theme ? "text-white" : "text-dark"}`}>What Our Happy Clients Say</h2>
+                                <p className={`${theme ? "text-light" : "text-secondary"}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas? Lorem ipsum dolor sit </p>
                             </div>
                         </div>
                         <div className="col-lg-7">
@@ -51,11 +51,11 @@ const Review = ({ theme }) => {
                                 <div>
                                     <div className="review_slide">
 
-                                        <div className={`${theme ? "text-dark" : "text-dark"} review_item text-center bg-white`}>
+                                        <div className={`${theme ? "text-secondary" : "text-secondary"} review_item text-center bg-white`}>
                                             <div className="icon">
                                                 <img src={quote_icon} width={40} alt="" />
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
+                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
                                             <h4>John Doe</h4>
                                             <span>CEO, Company Name</span>
                                         </div>
@@ -65,11 +65,11 @@ const Review = ({ theme }) => {
                                 <div>
                                     <div className="review_slide">
 
-                                        <div className={`${theme ? "text-dark" : "text-dark"} review_item text-center bg-white`}>
+                                        <div className={`${theme ? "text-secondary" : "text-secondary"} review_item text-center bg-white`}>
                                             <div className="icon">
                                                 <img src={quote_icon} width={40} alt="" />
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
+                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
                                             <h4>John Doe</h4>
                                             <span>CEO, Company Name</span>
                                         </div>
@@ -79,11 +79,11 @@ const Review = ({ theme }) => {
                                 <div>
                                     <div className="review_slide">
 
-                                        <div className={`${theme ? "text-dark" : "text-dark"} review_item text-center bg-white`}>
+                                        <div className={`${theme ? "text-secondary" : "text-secondary"} review_item text-center bg-white`}>
                                             <div className="icon">
                                                 <img src={quote_icon} width={40} alt="" />
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
+                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
                                             <h4>John Doe</h4>
                                             <span>CEO, Company Name</span>
                                         </div>
@@ -93,31 +93,18 @@ const Review = ({ theme }) => {
                                 <div>
                                     <div className="review_slide">
 
-                                        <div className={`${theme ? "text-dark" : "text-dark"} review_item text-center bg-white`}>
+                                        <div className={`${theme ? "text-secondary" : "text-secondary"} review_item text-center bg-white`}>
                                             <div className="icon">
                                                 <img src={quote_icon} width={40} alt="" />
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
+                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
                                             <h4>John Doe</h4>
                                             <span>CEO, Company Name</span>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div>
-                                    <div className="review_slide">
-
-                                        <div className={`${theme ? "text-dark" : "text-dark"} review_item text-center bg-white`}>
-                                            <div className="icon">
-                                                <img src={quote_icon} width={40} alt="" />
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
-                                            <h4>John Doe</h4>
-                                            <span>CEO, Company Name</span>
-                                        </div>
-
-                                    </div>
-                                </div>
+                              
 
                             </Slider>
                         </div>

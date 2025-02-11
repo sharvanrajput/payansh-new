@@ -48,9 +48,9 @@ const Navbar = ({ theme, toggleTheme }) => {
 
                             <div className="loginsignup">
                                 <ul className="list-inline d-flex align-items-center gap-3">
-                                    <Link to="/auto" className='text-decoration-none'>
-                                        <li className={`text-${theme ? "white" : "black"} fw-medium`}>
-                                            <span><SlLogin /></span> Login
+                                    <Link to="/auth" className='text-decoration-none'>
+                                        <li className={`text-${theme ? "white" : "black"} fs-6`}>
+                                            <span><SlLogin /></span> Sign in
                                         </li>
                                     </Link>
                                     <Link to="/auth">

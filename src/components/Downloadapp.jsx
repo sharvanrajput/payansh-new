@@ -11,7 +11,7 @@ const Downloadapp = ({theme}) => {
                     <div className="row">
                         <div className="col-lg-6 align-self-center">
                             <h2 className="">Download the App</h2>
-                            <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed felis id mauris malesuada vulputate vitae in lectus.</p>
+                            <p className={`${theme ? "text-light" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed felis id mauris malesuada vulputate vitae in lectus.</p>
                             <div className="d-flex">
                                 <button className='btn btn-dark' >
                                     <img src={playstor} alt="" style={{width:150}} className="img-fluid " />

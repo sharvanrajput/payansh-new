@@ -18,14 +18,14 @@ const Benefits = ({ theme }) => {
 
     return (
         <>
-            <section className={` ${theme ? "text-white" : "text-black  "}  ${theme ? "bg-black" : "bg-white"} benefits`} >
+            <section className={` ${theme ? "text-light" : "text-black  "}  ${theme ? "bg-black" : "bg-white"} benefits`} >
                 <div className="container">
                     <div className="row">
                         {/* Left Section */}
                         <div className="col-lg-4">
                             <div className="banner_left text-lg-start  home-about-right">
                                 <h2 className=" heading-graident">Know Your Benefits</h2>
-                                <p className={` ${theme ? "text-white" : "text-black  "} fs-5`}>
+                                <p cclassName={`${theme ? "text-light" : "text-secondary"}`}>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dignissimos tenetur at illum aspernatur consequuntur.
                                 </p>
                               
@@ -63,7 +63,7 @@ const Benefits = ({ theme }) => {
                                     <SwiperSlide>
                                         <div className="col-lg-12 ">
                                             <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
-                                                <p className={``}>
+                                                <p className={`${theme ? "text-light" : "text-black"}`}>
                                                     Enjoy <strong>lowest service fee</strong> on rent payment, flat at 1.5% with no hidden charges
                                                 </p>
                                                 <div className="text-center">
@@ -76,7 +76,7 @@ const Benefits = ({ theme }) => {
                                     <SwiperSlide>
                                         <div className="col-lg-12 ">
                                             <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
-                                                <p className={``}>
+                                                <p className={`${theme ? "text-light" : "text-black"}`}>
                                                     Enjoy <strong>lowest service fee</strong> on rent payment, flat at 1.5% with no hidden charges
                                                 </p>
                                                 <div className="text-center">
@@ -89,7 +89,7 @@ const Benefits = ({ theme }) => {
                                     <SwiperSlide>
                                         <div className="col-lg-12 ">
                                             <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
-                                                <p className={``}>
+                                                <p className={`${theme ? "text-light" : "text-black"}`}>
                                                     Enjoy <strong>lowest service fee</strong> on rent payment, flat at 1.5% with no hidden charges
                                                 </p>
                                                 <div className="text-center">
@@ -102,7 +102,7 @@ const Benefits = ({ theme }) => {
                                     <SwiperSlide>
                                         <div className="col-lg-12 ">
                                             <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
-                                                <p className={``}>
+                                                <p className={`${theme ? "text-light" : "text-black"}`}>
                                                     Enjoy <strong>lowest service fee</strong> on rent payment, flat at 1.5% with no hidden charges
                                                 </p>
                                                 <div className="text-center">
@@ -115,7 +115,7 @@ const Benefits = ({ theme }) => {
                                     <SwiperSlide>
                                         <div className="col-lg-12 ">
                                             <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
-                                                <p className={``}>
+                                                <p className={`${theme ? "text-light" : "text-black"}`}>
                                                     Enjoy <strong>lowest service fee</strong> on rent payment, flat at 1.5% with no hidden charges
                                                 </p>
                                                 <div className="text-center">
@@ -125,19 +125,7 @@ const Benefits = ({ theme }) => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="col-lg-12 ">
-                                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
-                                                <p className={``}>
-                                                    Enjoy <strong>lowest service fee</strong> on rent payment, flat at 1.5% with no hidden charges
-                                                </p>
-                                                <div className="text-center">
-
-                                               <img src={benefits} className='img-fluid mx-auto' alt="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
+                                   
                                     
                                 </Swiper>
                             </div>

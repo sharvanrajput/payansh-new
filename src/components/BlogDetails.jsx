@@ -30,7 +30,7 @@ const BlogDetails = ({ theme, toggleTheme }) => {
                 <span>{blog.date}</span>
               </div>
               <h2>{blog.heading}</h2>
-              <p>{blog.paragraph}</p>
+              <p className={`${theme ? "text-light" : "text-secondary"} `}> {blog.paragraph}</p>
             </div>
           </div>
         </div>

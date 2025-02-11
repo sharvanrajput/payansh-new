@@ -17,7 +17,7 @@ const Whychooseus = ({ theme }) => {
                             <div className="whychoose_left  ">
                                 <h2 className={`${theme ? "text-white" : "text-black"}`}>Why choose us</h2>
 
-                                <p className={`${theme ? "text-white" : "text-black"}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus. Sed vel nunc condimentum, rutrum enim in, consectetur dui. Sed ut ipsum vel lectus convallis faucibus. Sed vel nunc condimentum, rutrum enim in, consectetur dui.</p>
+                                <p className={`${theme ? "text-light" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus. Sed vel nunc condimentum, rutrum enim in, consectetur dui. Sed ut ipsum vel lectus convallis faucibus. Sed vel nunc condimentum, rutrum enim in, consectetur dui.</p>
                             </div>
                         </div>
 
@@ -27,10 +27,10 @@ const Whychooseus = ({ theme }) => {
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>
-                                    <div className="why_disc ps-3">
+                                    <div className="why_disc ps-lg-3 ">
 
-                                        <h3>Affordable and flexible</h3>
-                                        <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
+                                        <h3 className="my-lg-0 my-2">Affordable and flexible</h3>
+                                        <p className={`${theme ? "text-light" : "text-secondary"} mb-0`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
                                     </div>
                                 </div>
                             </div>
@@ -39,10 +39,10 @@ const Whychooseus = ({ theme }) => {
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>
-                                    <div className="why_disc ps-3">
+                                    <div className="why_disc ps-lg-3 ">
 
-                                        <h3>Affordable and flexible</h3>
-                                        <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
+                                        <h3 className="my-lg-0 my-2">Affordable and flexible</h3>
+                                        <p className={`${theme ? "text-light" : "text-secondary"} mb-0`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
                                     </div>
                                 </div>
                             </div>
@@ -51,26 +51,26 @@ const Whychooseus = ({ theme }) => {
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>
-                                    <div className="why_disc ps-3">
+                                    <div className="why_disc ps-lg-3 ">
 
-                                        <h3>Affordable and flexible</h3>
-                                        <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
+                                        <h3 className="my-lg-0 my-2">Affordable and flexible</h3>
+                                        <p className={`${theme ? "text-light" : "text-secondary"} mb-0`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className={`whychoose_box ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex flex-md-row flex-column`}>
+                                <div className={`whychoose_box  ${theme ? "text-white" : "text-black"} ${theme ? "bg-black" : "bg-white"} d-flex flex-md-row flex-column`}>
                                     <div className="why_icon">
                                         <img src={whychooseicon1} width={80} alt="" />
                                     </div>
-                                    <div className="why_disc ps-3">
+                                    <div className="why_disc ps-lg-3 ">
 
-                                        <h3>Affordable and flexible</h3>
-                                        <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
+                                        <h3 className="my-lg-0 my-2">Affordable and flexible</h3>
+                                        <p className={`${theme ? "text-light" : "text-secondary"} mb-0`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non felis eget lectus convallis faucibus.</p>
                                     </div>
                                 </div>
                             </div>
-
+                            
 
 
                         </div>

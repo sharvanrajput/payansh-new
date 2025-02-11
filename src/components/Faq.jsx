@@ -5,9 +5,14 @@ import homefaq from "../api/homefaq.json"
 const Faq = ({ theme }) => {
     return (
         <>
-            <section className={` ${theme ? "text-white bg-dark" : "text-black bg-light "}  faq_wraper pb-0 `}>
-               
-                <div className="container">
+            <section className={` ${theme ? "text-white bg-dark" : "text-black bg-light "}  faq_wraper py-0 `}>
+                <div className="banner_top_shave " style={{transform:"rotate(180deg)"}} >
+
+                    <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+                    </svg>
+                </div>
+                <div className="container py-5">
                     <div className="row">
                         <div className="col">
                             <div className="banner_left  ">
@@ -26,7 +31,7 @@ const Faq = ({ theme }) => {
                                         <div className="accordion-item mt-3" key={ind}>
                                             <h3 className="accordion-header" id={`heading${ind}`}>
                                                 <button
-                                                    className={` ${theme ? "text-white" : "text-black "} accordion-button collapsed`}
+                                                    className={` ${theme ? "text-white" : "text-white "} accordion-button collapsed`}
                                                     type="button"
                                                     data-bs-toggle="collapse"
                                                     data-bs-target={`#collapse${ind}`}
@@ -38,7 +43,7 @@ const Faq = ({ theme }) => {
                                             </h3>
                                             <div
                                                 id={`collapse${ind}`}
-                                                className={` ${theme ? "text-white" : "text-black "} accordion-collapse collapse`}
+                                                className={` ${theme ? "text-white" : "text-secondary "} accordion-collapse collapse`}
                                                 aria-labelledby={`heading${ind}`}
                                                 data-bs-parent="#accordionExample"
                                             >
@@ -53,10 +58,10 @@ const Faq = ({ theme }) => {
                 </div>
                 <div className="banner_top_shave " >
 
-<svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
-</svg>
-</div>
+                    <svg viewBox="0 0 1536 160" fill={`${theme ? "#000" : "#fff"} `} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path d="M1536 160V0L806.66 151.52C779.75 157.11 751.98 157.09 725.08 151.47L0 0V160H1536Z" class="fill-white"></path>
+                    </svg>
+                </div>
             </section>
         </>
     )
