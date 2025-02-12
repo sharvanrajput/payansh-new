@@ -25,7 +25,7 @@ const Benefits = ({ theme }) => {
                         <div className="col-lg-4">
                             <div className="banner_left text-lg-start  home-about-right">
                                 <h2 className=" heading-graident">Know Your Benefits</h2>
-                                <p cclassName={`${theme ? "text-light" : "text-secondary"}`}>
+                                <p className={`${theme ? "text-light" : "text-secondary"}`}>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dignissimos tenetur at illum aspernatur consequuntur.
                                 </p>
                               

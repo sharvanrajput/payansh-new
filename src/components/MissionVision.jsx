@@ -7,9 +7,9 @@ import vision from '../../public/images/vision.jpg'
 const MissionVision = ({theme}) => {
     return (
         <>
-            <section className={` ${theme ? "bg-black" : "bg-white"}  misionvision`}>
+            <section className={` ${theme ? "bg-black" : "bg-white"}  misionvision py-0`}>
                 <div className="container">
-                    <div className="row gy-5">
+                    <div className="row g-4 ">
                         <div className="col-lg-4 col-md-6">
                             <div className={`  ${theme ? "text-white" : "text-black"}   card bg-transparent wow fadeInLeftBig`} >
                                 <div className="overflow-hidden rounded-4">
@@ -23,11 +23,11 @@ const MissionVision = ({theme}) => {
                         </div>
                         <div className="col-lg-4 col-md-6">
                             <div className={`  ${theme ? "text-white" : "text-black"}   card bg-transparent wow fadeInLeftBig`}  >
-                                <div className="card-body px-0 pt-md-0">
+                                <div className="card-body px-0 pt-md-0 order-md-1 order-2">
                                     <h5 className="card-title  text_graident">Our Vision</h5>
                                     <p className={`${theme ? "text-light" : "text-secondary"}`}>We envision payansh as a thriving international financial trading entity, delivering steadfast brokerage services while maximizing benefits for our partners and traders. Our success is built upon our people, our clients, and our employees, along with innovative trading solutions and advanced technology.</p>
                                 </div>
-                                <div className="overflow-hidden rounded-4 mt-3">
+                                <div className="overflow-hidden rounded-4 order-md-2 order-1 mt-3">
                                     <img src={values} className="card-img-top rounded-4 wow swing" alt="Our vision" />
                                 </div>
                             </div>
