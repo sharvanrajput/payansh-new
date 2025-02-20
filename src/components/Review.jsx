@@ -42,8 +42,9 @@ const Review = ({ theme }) => {
                                     <img src={thumbs} width={100} alt="" />
                                     <span className='fw-semibold'>Clint's Feedback</span>
                                 </div>
-                                <h2 className={`${theme ? "text-white" : "text-dark"}`}>What Our Happy Clients Say</h2>
-                                <p className={`${theme ? "text-light" : "text-secondary"}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas? Lorem ipsum dolor sit </p>
+                                <h2 className={`${theme ? "text-white" : "text-dark"}`}>What Our Users Say  Trusted by Thousands!
+</h2>
+                                <p className={`${theme ? "text-light" : "text-secondary"}`}>Don’t just take our word for it—see why users love Payansh for secure, seamless, and rewarding payments! </p>
                             </div>
                         </div>
                         <div className="col-lg-7">
@@ -55,9 +56,10 @@ const Review = ({ theme }) => {
                                             <div className="icon">
                                                 <img src={quote_icon} width={40} alt="" />
                                             </div>
-                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
-                                            <h4>John Doe</h4>
-                                            <span>CEO, Company Name</span>
+                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Payansh made my rent payments hassle-free! The lowest service fee and automated transfers have saved me time and effort.</p>
+                                            <h4>Amit K. 
+</h4>
+                                            <span>Verified User</span>
                                         </div>
 
                                     </div>
@@ -69,9 +71,9 @@ const Review = ({ theme }) => {
                                             <div className="icon">
                                                 <img src={quote_icon} width={40} alt="" />
                                             </div>
-                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
-                                            <h4>John Doe</h4>
-                                            <span>CEO, Company Name</span>
+                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>I love earning cashback and rewards on my credit card while paying my bills. Plus, the instant payment confirmation gives me peace of mind!</p>
+                                            <h4>Priya S.</h4>
+                                            <span>Long-term User</span>
                                         </div>
 
                                     </div>
@@ -83,28 +85,15 @@ const Review = ({ theme }) => {
                                             <div className="icon">
                                                 <img src={quote_icon} width={40} alt="" />
                                             </div>
-                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
-                                            <h4>John Doe</h4>
-                                            <span>CEO, Company Name</span>
+                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Super fast and secure transactions! With automated monthly transfers, I never worry about missing a payment again.</p>
+                                            <h4>Rahul M.
+                                            </h4>
+                                            <span>Business Owner</span>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div>
-                                    <div className="review_slide">
-
-                                        <div className={`${theme ? "text-secondary" : "text-secondary"} review_item text-center bg-white`}>
-                                            <div className="icon">
-                                                <img src={quote_icon} width={40} alt="" />
-                                            </div>
-                                            <p className={`${theme ? "text-secondary" : "text-secondary"}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat, quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nihil temporibus rerum. Aliquid libero maiores esse a dignissimos quas unde ipsam, quos voluptates, perspiciatis aliquam dolor distinctio culpa, fugit qui.</p>
-                                            <h4>John Doe</h4>
-                                            <span>CEO, Company Name</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                              
+                                
 
                             </Slider>
                         </div>

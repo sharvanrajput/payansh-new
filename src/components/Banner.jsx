@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Button from './Button'
-import banner_bottom from '../../public/images/banner_bottom_shape.svg';
-import banner_element1 from '../../public/images/banner_element1.png';
-import banner_element2 from '../../public/images/banner_element2.png';
-import banner_element3 from '../../public/images/banner_element3.png';
+
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaCheckDouble } from "react-icons/fa6";
 
 
 const Banner = ({ theme }) => {
@@ -29,17 +28,27 @@ const Banner = ({ theme }) => {
 
     return (
         <>
-            <section className={` fw-medium   ${bannertheme} pb-0`}>
-               
+            <section className={` fw-medium   ${bannertheme} pb-0  ${!theme ? "text-secondary" : "text-white"}` } >
+
                 <div className="container pb-5">
                     <div className="row ">
                         <div className="col-lg-6">
                             <div className="banner_right  ">
-                                <h1 className={` ${!theme ? "text_graident" : "text-white"}`} >The next era of
+                                <h1 className={` ${!theme ? "text_graident" : "text-white"}`} >Simplify Your Payments with Payansh – Fast, Secure & Hassle-Free!
+                                </h1>
+                                <p className={` fw-normal ${!theme ? "text-secondary" : "text-light "}`}>Power your payments with Payansh, the ultimate BBPS-enabled platform designed for speed, security, and convenience. From mobile recharges and utility bills to loan repayments, taxes, and rent payments, manage it all in one place—quickly and seamlessly! </p>
+                                <ul className='d-flex justify-content-between ps-0 list-inline mb-3'>
 
-                                    embedded finance </h1>
-                                <p className={` fw-normal ${!theme ? "text-secondary" : "text-light "}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magni animi vero quasi aut aperiam itaque perferendis quam rem minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                                <Button colors={theme} text={"Get Started"} />
+                                    <li className='d-flex align-items-center'> <span className='banner_tick bg_graident me-2'> <FaCheckDouble />  </span>Instant Payments          </li>
+                                    <li className='d-flex align-items-center'> <span className='banner_tick bg_graident me-2'> <FaCheckDouble /> </span>  Secure Transactions    </li>
+                                    <li className='d-flex align-items-center'> <span className='banner_tick bg_graident me-2'> <FaCheckDouble /> </span>   Effortless Billing</li>
+                                </ul>
+                                <span >
+                                    <Button colors={theme} text={"Get Started"} />
+                                </span>
+                                <span className='ms-3'>
+                                    <Button className="ms-2" colors={theme} text={"Explore Services"} />
+                                </span>
                             </div>
                         </div>
                         <div className="col-lg-6 banner_img"></div>

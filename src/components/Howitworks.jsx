@@ -15,8 +15,10 @@ const Howitworks = ({ theme }) => {
                 <div className="container pb-5">
                     <div className="row">
                         <div className="col text-center">
-                            <h2 className={``} >How it works</h2>
-                            <p className={`${theme ? "text-light" : "text-secondary"}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, voluptas?</p>
+                            <h2 className={``} >How Payansh Works?
+                            </h2>
+                            <p className={`${theme ? "text-light" : "text-secondary"}`}>Simple, Fast & Hassle-Free
+                            </p>
                         </div>
                     </div>
 
@@ -33,8 +35,9 @@ const Howitworks = ({ theme }) => {
                                 </div>
                                 <div className="content">
                                     <div className="icon iconCodepen"></div>
-                                    <h3>Develop</h3>
-                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <h3>Sign Up & Login
+                                    </h3>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Create your account in minutes with secure authentication.</p>
                                 </div>
                             </div>
                         </div>
@@ -49,8 +52,8 @@ const Howitworks = ({ theme }) => {
                                 </div>
                                 <div className="content">
                                     <div className="icon iconSocial"></div>
-                                    <h3>Engage</h3>
-                                    <p className={`${theme ? "text-light" : "text-secondary"}`}> Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <h3>Complete KYC Verification </h3>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}> Verify your identity quickly for secure & seamless transactions.</p>
                                 </div>
                             </div>
                         </div>
@@ -65,8 +68,9 @@ const Howitworks = ({ theme }) => {
                                 </div>
                                 <div className="content">
                                     <div className="icon iconAirplane"></div>
-                                    <h3>Deliver</h3>
-                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <h3>Choose Your Payment 
+                                    </h3>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Select from bill payments, recharges, rent, loans & more.</p>
                                 </div>
                             </div>
                         </div>
@@ -81,8 +85,9 @@ const Howitworks = ({ theme }) => {
                                 </div>
                                 <div className="content">
                                     <div className="icon iconMap"></div>
-                                    <h3>Plan</h3>
-                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                                    <h3>Pay Instantly 
+                                    </h3>
+                                    <p className={`${theme ? "text-light" : "text-secondary"}`}>Complete your transaction with real-time confirmation & BBPS-certified security.</p>
                                 </div>
                             </div>
                         </div>

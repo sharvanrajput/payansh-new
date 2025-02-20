@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
-import benefits from "../../public/images/benefits1.png";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { SiTicktick } from "react-icons/si";
+// import benefits from "../../public/images/benefits1.png";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { SiTicktick } from "react-icons/si";
+import benefit1 from "../../public/images/benefit1.svg";
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 // Import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+// import { Pagination, Autoplay } from 'swiper/modules';
 
 
 
@@ -22,18 +23,19 @@ const Benefits = ({ theme }) => {
                 <div className="container">
                     <div className="row">
                         {/* Left Section */}
-                        <div className="col-lg-4">
-                            <div className="banner_left text-lg-start  home-about-right">
+                        <div className="col">
+                            <div className="banner_left text-lg-center  home-about-right">
                                 <h2 className=" heading-graident">Know Your Benefits</h2>
                                 <p className={`${theme ? "text-light" : "text-secondary"}`}>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dignissimos tenetur at illum aspernatur consequuntur.
+                                    Unlock More with Payansh!
+
                                 </p>
-                              
+
                             </div>
                         </div>
 
                         {/* Right Section with Swiper */}
-                        <div className="col-lg-8 col-md-12">
+                        {/* <div className="col-lg-8 col-md-12">
                             <div className="row px-3 ">
                                 <Swiper
                                     slidesPerView={2} // Show 3 slides at a time
@@ -129,7 +131,76 @@ const Benefits = ({ theme }) => {
                                     
                                 </Swiper>
                             </div>
+                        </div> */}
+
+
+                    </div>
+                    <div className="row g-4">
+                        
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> Automated Monthly Payments
+                                </p>
+                            </div>
                         </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> 45-Day Credit Cycle Advantage
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> Secure & BBPS-Certified Payments
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> Instant Discounts & Welcome Benefits
+
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> Lowest Service Fee
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> Earn Credit Card Rewards
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> All-in-One Payment Platform
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <div className="col-lg-3 col-md-6">
+                            <div className={` ${theme ? "bg-dark" : "bg-light"} benefit_box   bg-light `} >
+                                <img src={benefit1} width={50} alt="" />
+                                <p className={`${theme ? "text-light" : "text-black"}`}> Boost Your Credit Score
+
+                                </p>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>

@@ -8,7 +8,7 @@ import { BlogDetails,    Signuplogin } from './components';
 
 const App = () => {
   const [theme, setTheme] = useState(() => {
-    return JSON.parse(localStorage.getItem("theme")) || false ;
+    return JSON.parse(localStorage.getItem("theme")) ?? true; // `??` ensures fallback if null
   });
 
   // Update localStorage whenever theme changes
@@ -16,7 +16,7 @@ const App = () => {
     localStorage.setItem("theme", JSON.stringify(theme));
   }, [theme]);
 
-  // Function to toggle theme
+  // Toggle theme function
   const toggleTheme = () => {
     setTheme((prevTheme) => !prevTheme);
   };
