@@ -170,11 +170,11 @@ input:checked+.slider:before {
   -webkit-text-fill-color: transparent;
 }
 
-h1 {
+/* h1 {
   font-size: 40px;
-  line-height: 75px;
+  line-height: 50px;
   font-weight: 600;
-}
+} */
 
 .theembutton {
   background-image: linear-gradient(45deg, #4295CE, #364981);
@@ -823,12 +823,13 @@ text-align: center;
 .modal form button {
   width: 100%;
 }
+h1 {
+  font-size: 42px;
+  line-height: 47px;
+  font-weight: 800;
+}
 @media (max-width:1399px) and (min-width:1200px) {
-  h1 {
-    font-size: 42px;
-    line-height: 52px;
-    font-weight: 800;
-  }
+ 
 }
 
 @media (max-width:1199px) and (min-width:992px) {

@@ -11,7 +11,7 @@ const Downloadapp = ({theme}) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 align-self-center">
-                            <h2 className="">Download the Payansh App  Secure & Convenient
+                            <h2 className={`${!theme ? "text-black" : "text-white"}`}>Download the Payansh App  Secure & Convenient
                             </h2>
                             <p className={`${theme ? "text-light" : "text-secondary"}`}> Manage all your payments in one tap! Experience fast, seamless, and secure transactions anytime, anywhere.
                             </p>
